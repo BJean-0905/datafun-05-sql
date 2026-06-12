@@ -127,7 +127,7 @@ uvx pre-commit run --all-files
 
 # run the example pipelines (duckdb and sqlite)
 uv run python -m datafun.app_retail_duckdb_case
-uv run python -m datafun.app_retail_sqlite_case
+uv run python -m datafun.app_retail_sqlite_bjean
 
 # do chores
 uv run ruff format .
