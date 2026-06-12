@@ -1,6 +1,6 @@
 """app_retail_duckdb_case.py - Project script (example).
 
-Author: Denise Case
+Author: Denise Case, Britany Kline
 Date: 2026-02
 
 Purpose:
@@ -151,7 +151,7 @@ def main() -> None:
         run_sql_query(con, SQL_DIR / "bjean_shelter_query_sales_count.sql")
         run_sql_query(con, SQL_DIR / "bjean_shelter_query_sales_aggregate.sql")
         run_sql_query(con, SQL_DIR / "bjean_shelter_query_sales_by_category.sql")
-
+        run_sql_query(con, SQL_DIR / "bjean_shelter_query_sales_by_location.sql")
         # ----------------------------------------------------
         # STEP 4: RUN KPI QUERY (ACTION-DRIVEN)
         # ----------------------------------------------------
