@@ -1099,3 +1099,250 @@
 2026-06-12 14:47:34 | INFO | P05 | Executed successfully!
 2026-06-12 14:47:34 | INFO | P05 | ========================
 2026-06-12 14:47:34 | INFO | P05 | END main()
+2026-06-12 15:55:37 | INFO | P05 | === RUN START ===
+2026-06-12 15:55:37 | INFO | P05 | project=P05 Pipeline Example (DuckDB)
+2026-06-12 15:55:37 | INFO | P05 | repo_dir=datafun-05-sql
+2026-06-12 15:55:37 | INFO | P05 | python=3.14.3
+2026-06-12 15:55:37 | INFO | P05 | os=Windows 11
+2026-06-12 15:55:37 | INFO | P05 | shell=powershell
+2026-06-12 15:55:37 | INFO | P05 | cwd=.
+2026-06-12 15:55:37 | INFO | P05 | github_actions=False
+2026-06-12 15:55:37 | INFO | P05 | START main()
+2026-06-12 15:55:37 | INFO | P05 | ROOT_DIR: C:\Repos\datafun-05-sql
+2026-06-12 15:55:37 | INFO | P05 | DATA_RAW_DIR: C:\Repos\datafun-05-sql\data\raw\retail
+2026-06-12 15:55:37 | INFO | P05 | DATA_PROCESSED_DIR: C:\Repos\datafun-05-sql\data\processed\retail
+2026-06-12 15:55:37 | INFO | P05 | SQL_DIR: C:\Repos\datafun-05-sql\sql\duckdb
+2026-06-12 15:55:37 | INFO | P05 | DB_PATH: C:\Repos\datafun-05-sql\artifacts\duckdb\retail.duckdb
+2026-06-12 15:55:37 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_clean.sql
+2026-06-12 15:55:37 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_clean.sql
+2026-06-12 15:55:37 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_bootstrap.sql
+2026-06-12 15:55:37 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_bootstrap.sql
+2026-06-12 15:55:37 | INFO | P05 | 
+2026-06-12 15:55:37 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_query_store_count.sql
+2026-06-12 15:55:37 | INFO | P05 | ====================================
+2026-06-12 15:55:37 | INFO | P05 | case_retail_query_store_count.sql
+2026-06-12 15:55:37 | INFO | P05 | ====================================
+2026-06-12 15:55:37 | INFO | P05 | store_count
+2026-06-12 15:55:37 | INFO | P05 | 3
+2026-06-12 15:55:37 | INFO | P05 | 
+2026-06-12 15:55:37 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_query_sales_count.sql
+2026-06-12 15:55:37 | INFO | P05 | ====================================
+2026-06-12 15:55:37 | INFO | P05 | case_retail_query_sales_count.sql
+2026-06-12 15:55:37 | INFO | P05 | ====================================
+2026-06-12 15:55:37 | INFO | P05 | sale_count
+2026-06-12 15:55:37 | INFO | P05 | 30
+2026-06-12 15:55:37 | INFO | P05 | 
+2026-06-12 15:55:37 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_query_sales_aggregate.sql
+2026-06-12 15:55:37 | INFO | P05 | ====================================
+2026-06-12 15:55:37 | INFO | P05 | case_retail_query_sales_aggregate.sql
+2026-06-12 15:55:37 | INFO | P05 | ====================================
+2026-06-12 15:55:37 | INFO | P05 | sale_count, total_revenue, avg_sale_amount
+2026-06-12 15:55:37 | INFO | P05 | 30, 5227.0, 174.23
+2026-06-12 15:55:37 | INFO | P05 | 
+2026-06-12 15:55:37 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_query_sales_by_category.sql
+2026-06-12 15:55:37 | INFO | P05 | ====================================
+2026-06-12 15:55:37 | INFO | P05 | case_retail_query_sales_by_category.sql
+2026-06-12 15:55:37 | INFO | P05 | ====================================
+2026-06-12 15:55:37 | INFO | P05 | product_category, sale_count, total_revenue, avg_sale_amount
+2026-06-12 15:55:37 | INFO | P05 | Outdoors, 9, 3200.0, 355.56
+2026-06-12 15:55:37 | INFO | P05 | Clothing, 10, 1375.0, 137.5
+2026-06-12 15:55:37 | INFO | P05 | Food, 11, 652.0, 59.27
+2026-06-12 15:55:37 | INFO | P05 | 
+2026-06-12 15:55:37 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_query_kpi_revenue.sql
+2026-06-12 15:55:37 | INFO | P05 | ====================================
+2026-06-12 15:55:37 | INFO | P05 | case_retail_query_kpi_revenue.sql
+2026-06-12 15:55:37 | INFO | P05 | ====================================
+2026-06-12 15:55:37 | INFO | P05 | store_id, store_name, city, region, sale_count, total_revenue, avg_sale_amount
+2026-06-12 15:55:37 | INFO | P05 | S003, Central Plaza, Mankato, South, 10, 1868.0, 186.8
+2026-06-12 15:55:37 | INFO | P05 | S001, North Market, Duluth, North, 10, 1834.0, 183.4
+2026-06-12 15:55:37 | INFO | P05 | S002, Lakeside Shop, Ely, North, 10, 1525.0, 152.5
+2026-06-12 15:55:37 | INFO | P05 | ========================
+2026-06-12 15:55:37 | INFO | P05 | Executed successfully!
+2026-06-12 15:55:37 | INFO | P05 | ========================
+2026-06-12 15:55:37 | INFO | P05 | END main()
+2026-06-12 16:10:22 | INFO | P05 | === RUN START ===
+2026-06-12 16:10:22 | INFO | P05 | project=P05 Pipeline Example (DuckDB)
+2026-06-12 16:10:22 | INFO | P05 | repo_dir=datafun-05-sql
+2026-06-12 16:10:22 | INFO | P05 | python=3.14.3
+2026-06-12 16:10:22 | INFO | P05 | os=Windows 11
+2026-06-12 16:10:22 | INFO | P05 | shell=powershell
+2026-06-12 16:10:22 | INFO | P05 | cwd=.
+2026-06-12 16:10:22 | INFO | P05 | github_actions=False
+2026-06-12 16:10:22 | INFO | P05 | START main()
+2026-06-12 16:10:22 | INFO | P05 | ROOT_DIR: C:\Repos\datafun-05-sql
+2026-06-12 16:10:22 | INFO | P05 | DATA_RAW_DIR: C:\Repos\datafun-05-sql\data\raw\shelter
+2026-06-12 16:10:22 | INFO | P05 | DATA_PROCESSED_DIR: C:\Repos\datafun-05-sql\data\processed\shelter
+2026-06-12 16:10:22 | INFO | P05 | SQL_DIR: C:\Repos\datafun-05-sql\sql\duckdb
+2026-06-12 16:10:22 | INFO | P05 | DB_PATH: C:\Repos\datafun-05-sql\artifacts\duckdb\shelter.duckdb
+2026-06-12 16:10:22 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_clean.sql
+2026-06-12 16:10:22 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_clean.sql
+2026-06-12 16:10:22 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_bootstrap.sql
+2026-06-12 16:20:20 | INFO | P05 | === RUN START ===
+2026-06-12 16:20:20 | INFO | P05 | project=P05 Pipeline Example (DuckDB)
+2026-06-12 16:20:20 | INFO | P05 | repo_dir=datafun-05-sql
+2026-06-12 16:20:20 | INFO | P05 | python=3.14.3
+2026-06-12 16:20:20 | INFO | P05 | os=Windows 11
+2026-06-12 16:20:20 | INFO | P05 | shell=powershell
+2026-06-12 16:20:20 | INFO | P05 | cwd=.
+2026-06-12 16:20:20 | INFO | P05 | github_actions=False
+2026-06-12 16:20:20 | INFO | P05 | START main()
+2026-06-12 16:20:20 | INFO | P05 | ROOT_DIR: C:\Repos\datafun-05-sql
+2026-06-12 16:20:20 | INFO | P05 | DATA_RAW_DIR: C:\Repos\datafun-05-sql\data\raw\shelter
+2026-06-12 16:20:20 | INFO | P05 | DATA_PROCESSED_DIR: C:\Repos\datafun-05-sql\data\processed\shelter
+2026-06-12 16:20:20 | INFO | P05 | SQL_DIR: C:\Repos\datafun-05-sql\sql\duckdb
+2026-06-12 16:20:20 | INFO | P05 | DB_PATH: C:\Repos\datafun-05-sql\artifacts\duckdb\shelter.duckdb
+2026-06-12 16:20:20 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_clean.sql
+2026-06-12 16:20:20 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_clean.sql
+2026-06-12 16:20:20 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_bootstrap.sql
+2026-06-12 16:25:16 | INFO | P05 | === RUN START ===
+2026-06-12 16:25:16 | INFO | P05 | project=P05 Pipeline Example (DuckDB)
+2026-06-12 16:25:16 | INFO | P05 | repo_dir=datafun-05-sql
+2026-06-12 16:25:16 | INFO | P05 | python=3.14.3
+2026-06-12 16:25:16 | INFO | P05 | os=Windows 11
+2026-06-12 16:25:16 | INFO | P05 | shell=powershell
+2026-06-12 16:25:16 | INFO | P05 | cwd=.
+2026-06-12 16:25:16 | INFO | P05 | github_actions=False
+2026-06-12 16:25:16 | INFO | P05 | START main()
+2026-06-12 16:25:16 | INFO | P05 | ROOT_DIR: C:\Repos\datafun-05-sql
+2026-06-12 16:25:16 | INFO | P05 | DATA_RAW_DIR: C:\Repos\datafun-05-sql\data\raw\shelter
+2026-06-12 16:25:16 | INFO | P05 | DATA_PROCESSED_DIR: C:\Repos\datafun-05-sql\data\processed\shelter
+2026-06-12 16:25:16 | INFO | P05 | SQL_DIR: C:\Repos\datafun-05-sql\sql\duckdb
+2026-06-12 16:25:16 | INFO | P05 | DB_PATH: C:\Repos\datafun-05-sql\artifacts\duckdb\shelter.duckdb
+2026-06-12 16:25:16 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_clean.sql
+2026-06-12 16:25:16 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_clean.sql
+2026-06-12 16:25:16 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_bootstrap.sql
+2026-06-12 16:29:35 | INFO | P05 | === RUN START ===
+2026-06-12 16:29:35 | INFO | P05 | project=P05 Pipeline Example (DuckDB)
+2026-06-12 16:29:35 | INFO | P05 | repo_dir=datafun-05-sql
+2026-06-12 16:29:35 | INFO | P05 | python=3.14.3
+2026-06-12 16:29:35 | INFO | P05 | os=Windows 11
+2026-06-12 16:29:35 | INFO | P05 | shell=powershell
+2026-06-12 16:29:35 | INFO | P05 | cwd=.
+2026-06-12 16:29:35 | INFO | P05 | github_actions=False
+2026-06-12 16:29:35 | INFO | P05 | START main()
+2026-06-12 16:29:35 | INFO | P05 | ROOT_DIR: C:\Repos\datafun-05-sql
+2026-06-12 16:29:35 | INFO | P05 | DATA_RAW_DIR: C:\Repos\datafun-05-sql\data\raw\shelter
+2026-06-12 16:29:35 | INFO | P05 | DATA_PROCESSED_DIR: C:\Repos\datafun-05-sql\data\processed\shelter
+2026-06-12 16:29:35 | INFO | P05 | SQL_DIR: C:\Repos\datafun-05-sql\sql\duckdb
+2026-06-12 16:29:35 | INFO | P05 | DB_PATH: C:\Repos\datafun-05-sql\artifacts\duckdb\shelter.duckdb
+2026-06-12 16:29:35 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_clean.sql
+2026-06-12 16:29:35 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_clean.sql
+2026-06-12 16:29:35 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_bootstrap.sql
+2026-06-12 16:33:48 | INFO | P05 | === RUN START ===
+2026-06-12 16:33:48 | INFO | P05 | project=P05 Pipeline Example (DuckDB)
+2026-06-12 16:33:48 | INFO | P05 | repo_dir=datafun-05-sql
+2026-06-12 16:33:48 | INFO | P05 | python=3.14.3
+2026-06-12 16:33:48 | INFO | P05 | os=Windows 11
+2026-06-12 16:33:48 | INFO | P05 | shell=powershell
+2026-06-12 16:33:48 | INFO | P05 | cwd=.
+2026-06-12 16:33:48 | INFO | P05 | github_actions=False
+2026-06-12 16:33:48 | INFO | P05 | START main()
+2026-06-12 16:33:48 | INFO | P05 | ROOT_DIR: C:\Repos\datafun-05-sql
+2026-06-12 16:33:48 | INFO | P05 | DATA_RAW_DIR: C:\Repos\datafun-05-sql\data\raw\shelter
+2026-06-12 16:33:48 | INFO | P05 | DATA_PROCESSED_DIR: C:\Repos\datafun-05-sql\data\processed\shelter
+2026-06-12 16:33:48 | INFO | P05 | SQL_DIR: C:\Repos\datafun-05-sql\sql\duckdb
+2026-06-12 16:33:48 | INFO | P05 | DB_PATH: C:\Repos\datafun-05-sql\artifacts\duckdb\shelter.duckdb
+2026-06-12 16:33:48 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_clean.sql
+2026-06-12 16:33:48 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_clean.sql
+2026-06-12 16:33:48 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_bootstrap.sql
+2026-06-12 16:35:53 | INFO | P05 | === RUN START ===
+2026-06-12 16:35:53 | INFO | P05 | project=P05 Pipeline Example (DuckDB)
+2026-06-12 16:35:53 | INFO | P05 | repo_dir=datafun-05-sql
+2026-06-12 16:35:53 | INFO | P05 | python=3.14.3
+2026-06-12 16:35:53 | INFO | P05 | os=Windows 11
+2026-06-12 16:35:53 | INFO | P05 | shell=powershell
+2026-06-12 16:35:53 | INFO | P05 | cwd=.
+2026-06-12 16:35:53 | INFO | P05 | github_actions=False
+2026-06-12 16:35:53 | INFO | P05 | START main()
+2026-06-12 16:35:53 | INFO | P05 | ROOT_DIR: C:\Repos\datafun-05-sql
+2026-06-12 16:35:53 | INFO | P05 | DATA_RAW_DIR: C:\Repos\datafun-05-sql\data\raw\shelter
+2026-06-12 16:35:53 | INFO | P05 | DATA_PROCESSED_DIR: C:\Repos\datafun-05-sql\data\processed\shelter
+2026-06-12 16:35:53 | INFO | P05 | SQL_DIR: C:\Repos\datafun-05-sql\sql\duckdb
+2026-06-12 16:35:53 | INFO | P05 | DB_PATH: C:\Repos\datafun-05-sql\artifacts\duckdb\shelter.duckdb
+2026-06-12 16:35:53 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_clean.sql
+2026-06-12 16:35:53 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_clean.sql
+2026-06-12 16:35:53 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_bootstrap.sql
+2026-06-12 16:35:53 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_bootstrap.sql
+2026-06-12 16:35:53 | INFO | P05 | 
+2026-06-12 16:35:53 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_query_sales_count.sql
+2026-06-12 16:37:53 | INFO | P05 | === RUN START ===
+2026-06-12 16:37:53 | INFO | P05 | project=P05 Pipeline Example (DuckDB)
+2026-06-12 16:37:53 | INFO | P05 | repo_dir=datafun-05-sql
+2026-06-12 16:37:53 | INFO | P05 | python=3.14.3
+2026-06-12 16:37:53 | INFO | P05 | os=Windows 11
+2026-06-12 16:37:53 | INFO | P05 | shell=powershell
+2026-06-12 16:37:53 | INFO | P05 | cwd=.
+2026-06-12 16:37:53 | INFO | P05 | github_actions=False
+2026-06-12 16:37:53 | INFO | P05 | START main()
+2026-06-12 16:37:53 | INFO | P05 | ROOT_DIR: C:\Repos\datafun-05-sql
+2026-06-12 16:37:53 | INFO | P05 | DATA_RAW_DIR: C:\Repos\datafun-05-sql\data\raw\shelter
+2026-06-12 16:37:53 | INFO | P05 | DATA_PROCESSED_DIR: C:\Repos\datafun-05-sql\data\processed\shelter
+2026-06-12 16:37:53 | INFO | P05 | SQL_DIR: C:\Repos\datafun-05-sql\sql\duckdb
+2026-06-12 16:37:53 | INFO | P05 | DB_PATH: C:\Repos\datafun-05-sql\artifacts\duckdb\shelter.duckdb
+2026-06-12 16:37:53 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_clean.sql
+2026-06-12 16:37:53 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_clean.sql
+2026-06-12 16:37:53 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_bootstrap.sql
+2026-06-12 16:37:53 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_bootstrap.sql
+2026-06-12 16:37:53 | INFO | P05 | 
+2026-06-12 16:37:53 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_query_sales_count.sql
+2026-06-12 16:37:53 | INFO | P05 | ====================================
+2026-06-12 16:37:53 | INFO | P05 | bjean_shelter_query_sales_count.sql
+2026-06-12 16:37:53 | INFO | P05 | ====================================
+2026-06-12 16:37:53 | INFO | P05 | sale_count
+2026-06-12 16:37:53 | INFO | P05 | 30
+2026-06-12 16:37:53 | INFO | P05 | 
+2026-06-12 16:37:53 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_query_sales_aggregate.sql
+2026-06-12 16:41:38 | INFO | P05 | === RUN START ===
+2026-06-12 16:41:38 | INFO | P05 | project=P05 Pipeline Example (DuckDB)
+2026-06-12 16:41:38 | INFO | P05 | repo_dir=datafun-05-sql
+2026-06-12 16:41:38 | INFO | P05 | python=3.14.3
+2026-06-12 16:41:38 | INFO | P05 | os=Windows 11
+2026-06-12 16:41:38 | INFO | P05 | shell=powershell
+2026-06-12 16:41:38 | INFO | P05 | cwd=.
+2026-06-12 16:41:38 | INFO | P05 | github_actions=False
+2026-06-12 16:41:38 | INFO | P05 | START main()
+2026-06-12 16:41:38 | INFO | P05 | ROOT_DIR: C:\Repos\datafun-05-sql
+2026-06-12 16:41:38 | INFO | P05 | DATA_RAW_DIR: C:\Repos\datafun-05-sql\data\raw\shelter
+2026-06-12 16:41:38 | INFO | P05 | DATA_PROCESSED_DIR: C:\Repos\datafun-05-sql\data\processed\shelter
+2026-06-12 16:41:38 | INFO | P05 | SQL_DIR: C:\Repos\datafun-05-sql\sql\duckdb
+2026-06-12 16:41:38 | INFO | P05 | DB_PATH: C:\Repos\datafun-05-sql\artifacts\duckdb\shelter.duckdb
+2026-06-12 16:41:38 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_clean.sql
+2026-06-12 16:41:38 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_clean.sql
+2026-06-12 16:41:38 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_bootstrap.sql
+2026-06-12 16:41:38 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_bootstrap.sql
+2026-06-12 16:41:38 | INFO | P05 | 
+2026-06-12 16:41:38 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_query_sales_count.sql
+2026-06-12 16:41:38 | INFO | P05 | ====================================
+2026-06-12 16:41:38 | INFO | P05 | bjean_shelter_query_sales_count.sql
+2026-06-12 16:41:38 | INFO | P05 | ====================================
+2026-06-12 16:41:38 | INFO | P05 | sale_count
+2026-06-12 16:41:38 | INFO | P05 | 30
+2026-06-12 16:41:38 | INFO | P05 | 
+2026-06-12 16:41:38 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_query_sales_aggregate.sql
+2026-06-12 16:41:38 | INFO | P05 | ====================================
+2026-06-12 16:41:38 | INFO | P05 | bjean_shelter_query_sales_aggregate.sql
+2026-06-12 16:41:38 | INFO | P05 | ====================================
+2026-06-12 16:41:38 | INFO | P05 | adoption_count, total_revenue, avg_fee
+2026-06-12 16:41:38 | INFO | P05 | 30, 1785.0, 59.5
+2026-06-12 16:41:38 | INFO | P05 | 
+2026-06-12 16:41:38 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_query_sales_by_category.sql
+2026-06-12 16:41:38 | INFO | P05 | ====================================
+2026-06-12 16:41:38 | INFO | P05 | bjean_shelter_query_sales_by_category.sql
+2026-06-12 16:41:38 | INFO | P05 | ====================================
+2026-06-12 16:41:38 | INFO | P05 | animal_type, fee_count, total_revenue, avg_fee
+2026-06-12 16:41:38 | INFO | P05 | Dog, 13, 1130.0, 86.92
+2026-06-12 16:41:38 | INFO | P05 | Cat, 11, 565.0, 51.36
+2026-06-12 16:41:38 | INFO | P05 | Rabbit, 6, 90.0, 15.0
+2026-06-12 16:41:38 | INFO | P05 | 
+2026-06-12 16:41:38 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\bjean_shelter_query_kpi_revenue.sql
+2026-06-12 16:41:38 | INFO | P05 | ====================================
+2026-06-12 16:41:38 | INFO | P05 | bjean_shelter_query_kpi_revenue.sql
+2026-06-12 16:41:38 | INFO | P05 | ====================================
+2026-06-12 16:41:38 | INFO | P05 | shelter_id, shelter_name, city, capacity, adoption_count, total_revenue, avg_adoption_amount
+2026-06-12 16:41:38 | INFO | P05 | H001, Pine Valley Shelter, Ely, 40, 10, 715.0, 71.5
+2026-06-12 16:41:38 | INFO | P05 | H002, Lake County Shelter, Duluth, 60, 10, 605.0, 60.5
+2026-06-12 16:41:38 | INFO | P05 | H003, South Ridge Shelter, Mankato, 35, 10, 465.0, 46.5
+2026-06-12 16:41:38 | INFO | P05 | ========================
+2026-06-12 16:41:38 | INFO | P05 | Executed successfully!
+2026-06-12 16:41:38 | INFO | P05 | ========================
+2026-06-12 16:41:38 | INFO | P05 | END main()
