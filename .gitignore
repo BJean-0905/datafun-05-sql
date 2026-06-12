@@ -13,7 +13,6 @@
 
 # WHY: Logs are useful during debugging and verification.
 # ALT: Comment if logs must be inspected or validated.
-*.log
 # logs/
 PRIVATE_NOTES.md
 PRIVATE-NOTES.md
